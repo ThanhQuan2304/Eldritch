@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./assets/img/favicon.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Register-Login</title>
+  </head>
+  <body class="text-sm font-Marcellus">
+    <header
+      class="header fixed top-0 bg-transparent w-full z-[100]"
+      id="header"
+    >
+      <nav
+        class="nav desktop:container px-6 mx-auto flex justify-between h-20 items-center"
+      >
+        <a href="./index.html" class="nav__logo">
+          <img src="./assets/img/logo_white.png" alt="" class="w-44" />
+        </a>
+
+        <!----------------- MENU  -->
+        <div
+          id="nav-menu"
+          class="nav__menu tablet:fixed tablet:-right-[100%] tablet:top-0 tablet:bg-white tablet:h-[100vh] tablet:w-400 tablet:pt-7 tablet:transition-[right]"
+        >
+          <ul
+            class="nav__list flex items-center tablet:items-stretch gap-x-6 tablet:flex-col"
+          >
+            <!------------- ITEM -->
+            <li class="group/nav__item relative">
+              <a
+                href="/index.html"
+                class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all"
+              >
+                home
+              </a>
+              <div
+                class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden"
+              ></div>
+            </li>
+
+            <!------------- ITEM DROPDOWN  -->
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all"
+              >
+                pages
+                <i
+                  class="ri-arrow-down-s-line tablet:absolute tablet:right-3"
+                ></i>
+              </a>
+              <div
+                class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden"
+              ></div>
+              <div
+                class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-[310px] tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md"
+              >
+                <ul
+                  class="z-20 relative flex flex-col gap-y-3 tablet:text-center"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      About us
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Contact Us
+                    </a>
+                  </li>
+
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Comming Soon
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <!------------- ITEM -->
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all"
+              >
+                forum
+              </a>
+              <div
+                class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden"
+              ></div>
+            </li>
+
+            <!------------- ITEM -->
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all"
+              >
+                Category
+              </a>
+              <div
+                class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden"
+              ></div>
+            </li>
+
+            <!------------- ITEM DROPDOWN  -->
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all"
+              >
+                shop
+                <i
+                  class="ri-arrow-down-s-line tablet:absolute tablet:right-3"
+                ></i>
+              </a>
+              <div
+                class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden"
+              ></div>
+              <div
+                class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-200 tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md"
+              >
+                <ul
+                  class="z-20 relative flex flex-col gap-y-3 tablet:text-center"
+                >
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Products
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Cart Page
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Checkout
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase"
+                    >
+                      Single Product
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+          <div
+            class="nav__close absolute right-4 top-4 cursor-pointer hidden tablet:block"
+            id="nav-close"
+          >
+            <i class="ri-close-line text-xl"></i>
+          </div>
+        </div>
+
+        <div class="nav__action">
+          <ul class="nav__list flex gap-x-6">
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-base"
+              >
+                <i class="ri-search-line"></i>
+              </a>
+            </li>
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-base"
+              >
+                <i class="ri-shopping-cart-line"></i>
+              </a>
+            </li>
+            <li class="group/nav__item relative">
+              <a
+                href="#"
+                class="uppercase text-white inline-block px-1 text-base"
+              >
+                <i class="ri-user-line"></i>
+              </a>
+            </li>
+            <li class="group/nav__item relative" id="nav-toggle">
+              <a
+                href="#"
+                class="hidden uppercase text-white px-1 text-base tablet:block"
+              >
+                <i class="ri-menu-line"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!--Background-->
+    <div
+      class="w-full h-full bg-center bg-cover absolute pt-20"
+      style="
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+          url('./assets/img/bg/game-presentation-parallax-5.jpg');
+      "
+    >
+      <!-- Form-Box-->
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Login
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Register
+          </button>
+        </div>
+        <div class="social-icon">
+          <img class="inline-block" src="./assets/img/login-reg-img/fb.png" />
+          <img class="inline-block" src="./assets/img/login-reg-img/tw.png" />
+          <img class="inline-block" src="./assets/img/login-reg-img/gp.png" />
+        </div>
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Your Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >Remember Password</span
+          >
+          <div class="submit-btn flex justify-center">
+            <button type="submit" class="">Login</button>
+          </div>
+        </form>
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="User ID"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email ID"
+            required
+          />
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Enter Your Password"
+            required
+          />
+          <input type="checkbox" class="check-box" /><span
+            >I agree to the terms & conditions</span
+          >
+          <div class="submit-btn flex justify-center">
+            <button type="submit" class="">Register</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("register");
+      var z = document.getElementById("btn");
+
+      function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Eldritch</title>
+</head>
+
+<body class="text-sm font-Marcellus">
+    <header class="header fixed top-0 bg-transparent w-full z-[100]" id="header">
+        <nav class="nav desktop:container px-6 mx-auto flex justify-between h-20 items-center">
+            <a href="./index.html" class="nav__logo">
+                <img src="./assets/img/logo_white.png" alt="" class="w-44" />
+            </a>
+
+            <!----------------- MENU  -->
+            <div id="nav-menu"
+                class="nav__menu tablet:fixed tablet:-right-[100%] tablet:top-0 tablet:bg-white tablet:h-[100vh] tablet:w-400 tablet:pt-7 tablet:transition-[right]">
+                <ul class="nav__list flex items-center tablet:items-stretch gap-x-6 tablet:flex-col">
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="./index.html"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            home
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM DROPDOWN  -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            pages
+                            <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                        <div
+                            class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-[310px] tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                            <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Comming Soon
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            forum
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            Category
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM DROPDOWN  -->
+                    <li class="group/nav__item relative">
+                        <a href=""
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            shop
+                            <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                        <div
+                            class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-200 tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                            <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                                <li>
+                                    <a href="./shop.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Cart Page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Checkout
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./singleproduct.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Single Product
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav__close absolute right-4 top-4 cursor-pointer hidden tablet:block" id="nav-close">
+                    <i class="ri-close-line text-xl"></i>
+                </div>
+            </div>
+
+            <div class="nav__action">
+                <ul class="nav__list flex gap-x-6">
+                    <li class="group/nav__item relative">
+                        <a href="./register.html" class="py-2 px-2 rounded-1 border-[1px] border-white text-white box-shadow-login">
+                            Login
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-shopping-cart-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-user-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative" id="nav-toggle">
+                        <a href="#" class="hidden uppercase text-white px-1 text-base tablet:block">
+                            <i class="ri-menu-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main class="overflow-hidden">
+        <!------------------ HOME  -->
+        <div class="home h-[100vh]" id="home">
+            <!------------------- HOME SWIPER  -->
+            <div class="swiper homeSwiper">
+                <div class="swiper-wrapper">
+                    <!---------------- HOME ITEM  -->
+                    <div class="swiper-slide bg-cover bg-center flex flex-col justify-center items-center" style="
+                background-image: url('./assets/img/slider/main-home-rev-1.jpg');
+              ">
+                        <h1
+                            class="text-5xl text-white uppercase tracking-[20px] mb-10 latop:text-3xl mobile:text-2xl latop:tracking-[10px]">
+                            age of the dragon
+                        </h1>
+                        <img src="./assets/img/line/inner-img-3.png" class="mb-10" alt="" />
+                        <p class="text-center text-white text-base mb-10 mini-tablet:px-10">
+                            That is not dead which can eternal lie, and with strange eons
+                            even death may die. <br />
+                            In his house at R'lyeh, dead Cthulhu waits dreaming.
+                        </p>
+                        <a href="./shop.html"
+                            class="py-5 px-10 rounded-1 border-[1px] border-white text-white uppercase shadow-[0_0_0px_rgba(250,250,250,0.9)] hover:shadow-[0_0px_15px_rgba(250,250,250,0.9)] transition-shadow">
+                            buy product
+                        </a>
+                    </div>
+
+                    <!---------------- HOME ITEM  -->
+                    <div class="swiper-slide bg-cover bg-center flex flex-col justify-center items-center" style="
+                background-image: url('./assets/img/slider/main-home-rev-2.jpg');
+              ">
+                        <h1
+                            class="text-6xl text-white uppercase tracking-[20px] mb-10 latop:text-3xl mobile:text-2xl latop:tracking-[10px]">
+                            the unconquered
+                        </h1>
+                        <img src="./assets/img/line/inner-img-3.png" class="mb-10" alt="" />
+                        <p class="text-center text-white text-base mb-10 mini-tablet:px-10">
+                            It seemed to be a sort of monster, or symbol representing a
+                            monster,<br />
+                            of a form which only a diseased fancy could conceive.
+                        </p>
+                        <a href="./shop.html"
+                            class="py-5 px-10 rounded-1 border-[1px] border-white text-white uppercase shadow-[0_0_0px_rgba(250,250,250,0.9)] hover:shadow-[0_0px_15px_rgba(250,250,250,0.9)] transition-shadow">
+                            buy product
+                        </a>
+                    </div>
+
+                    <!---------------- HOME ITEM  -->
+                    <div class="swiper-slide bg-cover bg-center flex flex-col justify-center items-center" style="
+                background-image: url('./assets/img/slider/main-home-rev-3.jpg');
+              ">
+                        <h1
+                            class="text-6xl text-white uppercase tracking-[20px] mb-10 latop:text-3xl mobile:text-2xl latop:tracking-[10px]">
+                            a new hero rises
+                        </h1>
+                        <img src="./assets/img/line/inner-img-3.png" class="mb-10" alt="" />
+                        <p class="text-center text-white text-base mb-10 mini-tablet:px-10">
+                            You were a hero round these parts. That's what they call you
+                            when you<br />
+                            kill so many people the word murderer falls short.
+                        </p>
+                        <a href="./shop.html"
+                            class="py-5 px-10 rounded-1 border-[1px] border-white text-white uppercase shadow-[0_0_0px_rgba(250,250,250,0.9)] hover:shadow-[0_0px_15px_rgba(250,250,250,0.9)] transition-shadow">
+                            buy product
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next bg-[rgba(0,0,0,0.5)]">
+                    <i class="ri-arrow-right-s-line text-[20px] text-white"></i>
+                </div>
+                <div class="swiper-button-prev bg-[rgba(0,0,0,0.5)]">
+                    <i class="ri-arrow-left-s-line text-[20px] text-white"></i>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+
+        <!----------------- INTRODUCE  -->
+        <div style="
+          background-image: url('./assets/img/bg/game-presentation-parallax-1.jpg');
+        " class="introduce py-[150px] text-center bg-cover bg-center bg-fixed" id="introduce">
+            <div class="introduce__container">
+                <h3 class="text-base text-white mb-4">Come The End Of The World</h3>
+                <h2 class="text-5xl text-white mb-7 mini-tablet:text-4xl">
+                    SEE WHAT LIES BEYOND
+                </h2>
+                <img src="./assets/img/line/inner-img-3.png" class="w-350 mx-auto mb-6" alt="" />
+                <p class="w-[600px] text-white mx-auto text-base mini-tablet:w-400">
+                    There is in the land of Mnar a vast still lake that is fed by no
+                    stream and out of which no stream flows. Ten thousand years ago
+                    there stood by its shore the mighty city of Sarnath, but Sarnath
+                    stands there no more.
+                </p>
+            </div>
+        </div>
+
+        <!----------- video -->
+        <div class="h-[400px]" >
+            <video class="w-full h-full object-cover" src="./assets/img/video/ark.mp4" autoplay  loop></video>
+        </div>
+
+        <!--------------- CHARACTER  -->
+        <div style="
+          background-image: url('./assets/img/bg/game-presentation-parallax-3.jpg');
+        " class="character py-[100px] text-center bg-center bg-cover bg-fixed">
+            <h3 class="text-base text-white mb-4">Thread Thine Path</h3>
+            <h2 class="text-5xl text-white mb-5 mini-tablet:text-4xl">
+                WITH A CAREFUL STEP
+            </h2>
+            <img src="./assets/img/line/inner-img-3.png" class="w-350 mx-auto mb-6" alt="" />
+            <p class="w-[600px] text-white mx-auto text-base mini-tablet:w-400 mb-16">
+                There is in the land of Mnar a vast still lake that is fed by no stream and out of which no stream
+                flows.
+            </p>
+            <div class="character__container h-500 px-10">
+                <div class="swiper characterSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-4.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Elf</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-10">
+                                    An adventurer clad in fireproof steel with an unquenchable
+                                    thirst for dragon hunting
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-5.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Half-Orc</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A nimble nobleman from a distant land with a sole purpose of
+                                    honing his skill
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-7.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Draenei</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    An adventurer clad in fireproof steel with an unquenchable
+                                    thirst for dragon hunting
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-6.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Moonfolk</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A remnant of a former saint, a swordmaster with a hefty
+                                    blade once used to protect.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-8.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Char</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A nimble nobleman from a distant land with a sole purpose of
+                                    honing his skill
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-9.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Goliath</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A remnant of a former saint, a swordmaster with a hefty blade once used to protect.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-1.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Dragonslayer</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    An adventurer clad in fireproof steel with an unquenchable thirst for dragon hunting
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-2.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Bushi</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A nimble nobleman from a distant land with a sole purpose of
+                                    honing his skill
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="charater__img w-full mb-4">
+                                <img src="./assets/img/character/game-presentation-card-image-3.jpg" class="max-w-full"
+                                    alt="" />
+                            </div>
+                            <div class="character__data">
+                                <h3 class="text-2xl text-white">Fire Seeker</h3>
+                                <div class="w-10 h-[2px] bg-first mx-auto my-4"></div>
+                                <p class="text-base text-white px-2">
+                                    A remnant of a former saint, a swordmaster with a hefty blade once used to protect.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------- TESTIMONIAL -->
+        <div style="background-image:url('./assets/img/bg/video-cover-image-2.jpg');"
+            class="testimonial py-[150px] bg-center bg-cover">
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide text-center">
+                        <h2 class="text-5xl uppercase text-white mb-10 mini-tablet:text-3xl">
+                            epic fantacy
+                        </h2>
+                        <p class="text-base text-white w-[750px] mx-auto mb-10 leading-8 tablet:w-full tablet:px-6">
+                            "Fantasy encompasses a wide, wide spectrum of writing. We have beast fables, we have
+                            gothics, we have tales of vampires and werewolves, and we have sword and sorcery; we have
+                            epics from Homer, and there is just so much out there that we put under the umbrella of
+                            fantasy."
+                        </p>
+                        <h3 class="text-xl text-white">- Clive Thompson</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h2 class="text-5xl uppercase text-white mb-10 mini-tablet:text-3xl">
+                            harcode gamers
+                        </h2>
+                        <p class="text-base text-white w-[750px] mx-auto mb-10 leading-8 tablet:w-full tablet:px-6">
+                            "Take the hardcore gamers. The characters are way more real in the world of hardcore gamers
+                            who have played the game for hundreds and hundreds of hours. They have the movie in their
+                            heads, they've built it on their own. These guys are always very disappointed in the movies.
+                            "
+                        </p>
+                        <h3 class="text-xl text-white">- Robin Hobb</h3>
+                    </div>
+                    <div class="swiper-slide text-center">
+                        <h2 class="text-5xl uppercase text-white mb-10 mini-tablet:text-3xl">
+                            speed up leveling
+                        </h2>
+                        <p class="text-base text-white w-[750px] mx-auto mb-10 leading-8 tablet:w-full tablet:px-6">
+                            "The humanitarian developers behind World of Warcraft have also discovered a way to bribe
+                            gamers into turning off their computers and going outside. If you log off for a few days,
+                            your character will be more 'rested' when you resume playing, a mode that temporarily speeds
+                            up your leveling. "
+                        </p>
+                        <h3 class="text-xl text-white">- Uwe Boll</h3>
+                    </div>
+
+                </div>
+                <div class="swiper-button-next rotate-90 -translate-x-5 hover:-translate-x-1 transition-transform">
+                    <img src="./assets/img/arrow_white.png" alt="">
+                </div>
+                <div class="swiper-button-prev -rotate-90 translate-x-3 hover:-translate-x-0 transition-transform">
+                    <img src="./assets/img/arrow_white.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!------------ CONTACT  -->
+        <div style="background-image: url('./assets/img/bg/game-presentation-parallax-4.jpg');"
+            class="contact py-[150px] bg-center bg-cover bg-fixed">
+            <div class="desktop:container mx-auto px-6 text-center">
+                <h3 class="text-base text-white mb-4">Subscribe To Our Newsletter</h3>
+                <h2 class="text-5xl text-white mb-7 mini-tablet:text-4xl">
+                    AND KEEP UP TO DATE
+                </h2>
+                <img src="./assets/img/line/inner-img-3.png" class="w-350 mx-auto mb-6" alt="" />
+                <form action="">
+                    <input type="text" placeholder="YOUR NAME"
+                        class="py-5 px-4 w-450 outline-none bg-transparent border-white border-[1px] text-white mini-tablet:w-300">
+                    <a href="#" class="py-5 p-4 bg-transparent border-white border-[1px] uppercase text-white ">learn
+                        more</a>
+                </form>
+            </div>
+        </div>
+
+        <!---------------- COMMING SOON  -->
+        <div style="background-image: url('./assets/img/bg/game-presentation-parallax-5.jpg');" class="release py-200">
+            <div class="release__container desktop:container mx-auto px-6 text-center">
+                <h2 class="text-5xl text-white mb-8 mini-tablet:text-4xl">
+                    COMING OUT IN
+                </h2>
+                <img src="./assets/img/line/section-title-image-1.png" class="w-350 mx-auto mb-8" alt="" />
+                <div class="flex justify-center items-center gap-x-24">
+                    <div class="flex flex-col items-center">
+                        <span class="text-6xl text-white tracking-wider">
+                            15
+                        </span>
+                        <span class="text-white text-2xl">Hour</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-6xl text-white tracking-wider">
+                            30
+                        </span>
+                        <span class="text-white text-2xl">Minute</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-6xl text-white tracking-wider">
+                            50
+                        </span>
+                        <span class="text-white text-2xl">Seconds</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!---------------- ORDER -->
+        <div style="background-image:url('./assets/img/bg/game-presentation-parallax-6.jpg');"
+            class="order py-[100px] bg-center bg-cover bg-fixed">
+            <div class="order__container desktop:container mx-auto p-6">
+                <div
+                    class="grid grid-cols-[400px_400px] tablet:grid-cols-[350px_350px] tablet:gap-x-4 mini-tablet:!grid-cols-[400px] items-center justify-center gap-x-6">
+                    <div class="order__img mini-tablet:mb-5">
+                        <img src="./assets/img/product/game-presentation-elements-holder-image.png" alt="">
+                    </div>
+                    <div class="order__data mini-tablet:text-center">
+                        <h2 class="text-4xl text-white mb-6">
+                            PREORDER NOW!
+                        </h2>
+                        <p class="text-white text-base mb-10">
+                            But half buried in the rushes was spied a curious green idol of stone; an exceedingly
+                            ancientidol coated with seaweed and chiselled in the likeness of Bokrug, the great
+                            water-lizard. That idol, enshrined in the high temple at Ilarnek, was subsequently
+                            worshipped beneath thegibbous moon throughout the land of Mnar.
+                        </p>
+                        <a href="#"
+                            class="text-sm uppercase py-5 px-10 border-white border-[1px] text-white transition-shadow hover:shadow-[0_0_15px_#fff]">
+                            preorder
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!------------------ PORTFOLIO  -->
+        <div class="porfolio">
+            <div class="portfolio__container grid grid-cols-2 tablet:grid-cols-1">
+                <div>
+                    <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                        <img src="./assets/img/portfolio/portfolio-image-18-1300x650.jpg"
+                            class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-center w-full h-full"
+                            alt="">
+                        <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                            style="background-color:rgba(0,0,0,0.5);">
+                            <span
+                                class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                style="text-shadow:0 0 13px rgb(185, 185, 185) ;">Son of the Black Sword</span>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-2 mobile:grid-cols-1">
+                        <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                            <img src="./assets/img/portfolio/portfolio-image-22-1024x1024.jpg"
+                                class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-center w-full h-full"
+                                alt="">
+                            <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                                style="background-color:rgba(0,0,0,0.5);">
+                                <span
+                                    class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                    style="text-shadow:0 0 13px rgb(185, 185, 185) ;">Empire Ascendant</span>
+                            </div>
+                        </div>
+                        <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                            <img src="./assets/img/portfolio/game-presentation-card-image-6.jpg"
+                                class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-center w-full h-full"
+                                alt="">
+                            <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                                style="background-color:rgba(0,0,0,0.5);">
+                                <span
+                                    class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                    style="text-shadow:0 0 13px rgb(185, 185, 185) ;">Six of Crows</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="grid grid-cols-2 mobile:grid-cols-1">
+                        <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                            <img src="./assets/img/portfolio/portfolio-image-19-1024x1024.jpg"
+                                class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-center w-full h-full"
+                                alt="">
+                            <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                                style="background-color:rgba(0,0,0,0.5);">
+                                <span
+                                    class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                    style="text-shadow:0 0 13px rgb(185, 185, 185) ;">Wake of Vultures</span>
+                            </div>
+                        </div>
+                        <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                            <img src="./assets/img/portfolio/portfolio-image-20-1024x1024.jpg"
+                                class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-top w-full h-full"
+                                alt="">
+                            <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                                style="background-color:rgba(0,0,0,0.5);">
+                                <span
+                                    class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                    style="text-shadow:0 0 13px rgb(185, 185, 185) ;">The Autumn Republic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative group/portfolio__item h-300 overflow-hidden cursor-pointer">
+                        <img src="./assets/img/portfolio/portfolio-image-23-1300x650.jpg"
+                            class="group-hover/portfolio__item:scale-110 duration-500 transition-transform object-cover object-center w-full h-full"
+                            alt="">
+                        <div class="absolute w-full h-full top-0 left-0 flex justify-center items-center opacity-0 group-hover/portfolio__item:opacity-100 transition-opacity duration-500"
+                            style="background-color:rgba(0,0,0,0.5);">
+                            <span
+                                class="text-white scale-x-125 text-2xl group-hover/portfolio__item:scale-100 transition-transform duration-500 text-center"
+                                style="text-shadow:0 0 13px rgb(185, 185, 185) ;">The Grace of Kings</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-------------- FOOTER  -->
+    <footer class="footer py-[50px] bg-second">
+        <div class="desktop:container mx-auto px-6">
+            <div class="grid grid-cols-4 gap-x-10 gap-y-10 tablet:grid-cols-3 mini-tablet:grid-cols-2 mobile:grid-cols-1">
+                <div>
+                    <img src="./assets/img/logo_white.png" alt="" class="w-44 mb-4 mobile:w-52">
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="search" type="text"
+                            class="text-white uppercase  bg-transparent outline-none text-base">
+                        <i class="ri-search-line text-white cursor-pointer"></i>
+                    </form>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">
+                        lasted news
+                    </h2>
+                    <ul class="flex flex-col gap-y-3">
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-20-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center">
+                            <div>
+                                <h3 class="text-xl text-white">
+                                    Black Angel
+                                </h3>
+                                <p class="text-[#c2c2c2] text-sm">
+                                    June 7, 2017
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-19-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center">
+                            <div>
+                                <h3 class="text-xl text-white">
+                                    Knight
+                                </h3>
+                                <p class="text-[#c2c2c2] text-sm">
+                                    June 7, 2017
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">
+                        instagram
+                    </h2>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/19367313_1873362989592591_4885084815944056832_n.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/2.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/3.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/4.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/5.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/6.jpg" alt=""
+                                class="w-full h-full object-cover object-center">
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">
+                        NEWSLETTER
+                    </h2>
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="subscribe" type="text"
+                            class="text-white uppercase  bg-transparent outline-none text-base">
+                        <i class="ri-mail-fill text-base text-white cursor-pointer"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="py-6 bg-[#1c1c1c]">
+        <div class="desktop:container mx-auto px-6 flex justify-between items-center">
+            <p class="text-white text-sm">
+                © 2022 Thanh Quan, All Rights Reserved
+            </p>
+            <ul class="flex gap-x-6 items-center">
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <script src="./assets/js/scrollreveal.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

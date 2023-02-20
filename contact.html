@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Eldritch</title>
+</head>
+
+<body class="text-sm font-Marcellus">
+  <header class="header fixed top-0 bg-transparent w-full z-[100]" id="header">
+    <nav class="nav desktop:container px-6 mx-auto flex justify-between h-20 items-center">
+        <a href="./index.html" class="nav__logo">
+            <img src="./assets/img/logo_white.png" alt="" class="w-44" />
+        </a>
+
+        <!----------------- MENU  -->
+        <div id="nav-menu"
+            class="nav__menu tablet:fixed tablet:-right-[100%] tablet:top-0 tablet:bg-white tablet:h-[100vh] tablet:w-400 tablet:pt-7 tablet:transition-[right]">
+            <ul class="nav__list flex items-center tablet:items-stretch gap-x-6 tablet:flex-col">
+                <!------------- ITEM -->
+                <li class="group/nav__item relative">
+                    <a href="./index.html"
+                        class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                        home
+                    </a>
+                    <div
+                        class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                    </div>
+                </li>
+
+                <!------------- ITEM DROPDOWN  -->
+                <li class="group/nav__item relative">
+                    <a href="#"
+                        class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                        pages
+                        <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                    </a>
+                    <div
+                        class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                    </div>
+                    <div
+                        class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-[310px] tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                        <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                            <li>
+                                <a href="#"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    About us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./contact.html"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Contact Us
+                                </a>
+                            </li>
+                            
+                            <li>
+                                <a href="#"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Comming Soon
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <!------------- ITEM -->
+                <li class="group/nav__item relative">
+                    <a href="#"
+                        class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                        forum
+                    </a>
+                    <div
+                        class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                    </div>
+                </li>
+
+                <!------------- ITEM -->
+                <li class="group/nav__item relative">
+                    <a href="#"
+                        class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                        Category
+                    </a>
+                    <div
+                        class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                    </div>
+                </li>
+
+                <!------------- ITEM DROPDOWN  -->
+                <li class="group/nav__item relative">
+                    <a href=""
+                        class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                        shop
+                        <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                    </a>
+                    <div
+                        class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                    </div>
+                    <div
+                        class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-200 tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                        <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                            <li>
+                                <a href="./shop.html"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Cart Page
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Checkout
+                                </a>
+                            </li>
+                            <li>
+                                <a href="./singleproduct.html"
+                                    class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                    Single Product
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="nav__close absolute right-4 top-4 cursor-pointer hidden tablet:block" id="nav-close">
+                <i class="ri-close-line text-xl"></i>
+            </div>
+        </div>
+
+        <div class="nav__action">
+            <ul class="nav__list flex gap-x-6">
+                <li class="group/nav__item relative">
+                    <a href="./register.html" class="py-2 px-2 rounded-1 border-[1px] border-white text-white box-shadow-login">
+                        Login
+                    </a>
+                </li>
+                <li class="group/nav__item relative">
+                    <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                        <i class="ri-search-line"></i>
+                    </a>
+                </li>
+                <li class="group/nav__item relative">
+                    <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                        <i class="ri-shopping-cart-line"></i>
+                    </a>
+                </li>
+                <li class="group/nav__item relative">
+                    <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                        <i class="ri-user-line"></i>
+                    </a>
+                </li>
+                <li class="group/nav__item relative" id="nav-toggle">
+                    <a href="#" class="hidden uppercase text-white px-1 text-base tablet:block">
+                        <i class="ri-menu-line"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+    <!---------- main  -->
+    <main class="overflow-hidden">
+        <section class="py-40 bg-cover bg-center bg-fixed" style="
+          background-image: url('./assets/img/bg/contact-us-background-image.jpg');
+        ">
+            <div class="desktop:container px-6 flex flex-col items-center">
+                <h2 class="text-5xl font-semibold text-white tracking-widest mb-5 mobile:text-center">
+                    Contact Us
+                </h2>
+                <img src="./assets/img/line/line2.png" class="width-[500px]" alt="" />
+            </div>
+        </section>
+
+        <!--------------- form  -->
+        <section style="
+          background-image: url('./assets/img/bg/contact-us-image-1.jpg');
+        " class="introduce py-[150px] text-center bg-cover bg-center bg-fixed" id="introduce">
+            <div class="introduce__container">
+                <h2 class="text-5xl text-white mb-7 mini-tablet:text-4xl">
+                    Nice To See You !
+                </h2>
+                <img src="./assets/img/line/inner-img-3.png" class="w-350 mx-auto mb-6" alt="" />
+               <form action="" class="flex flex-col gap-y-2  mx-auto w-[600px] mini-tablet:w-500 mobile:w-450">
+                    <div class="grid grid-cols-2 gap-x-2">
+                        <input type="text" placeholder="YOUR NAME"
+                        class="py-3 px-4 w-full outline-none bg-transparent border-white border-[1px] text-white">
+                        <input type="text" placeholder="YOUR EMAIL"
+                        class="py-3 px-4 w-full outline-none bg-transparent border-white border-[1px] text-white">
+                    </div>
+                    <textarea name="" id="" cols="30" rows="7" placeholder="MESSAGE" class="py-3 px-4 w-full outline-none bg-transparent border-white border-[1px] text-white"></textarea>
+                    <a href="#"
+                            class="py-4  rounded-1 border-[1px] border-white text-white uppercase shadow-[0_0_0px_rgba(250,250,250,0.9)] hover:shadow-[0_0px_15px_rgba(250,250,250,0.9)] transition-shadow">
+                           submit
+                        </a>
+               </form>
+            </div>
+        </section>
+
+        <!-- map  -->
+        <section>
+            
+        </section>
+    </main>
+
+    <!-------------- FOOTER  -->
+    <footer class="footer py-[50px] bg-second">
+        <div class="desktop:container mx-auto px-6">
+            <div
+                class="grid grid-cols-4 gap-x-10 gap-y-10 tablet:grid-cols-3 mini-tablet:grid-cols-2 mobile:grid-cols-1">
+                <div>
+                    <img src="./assets/img/logo_white.png" alt="" class="w-44 mb-4 mobile:w-52" />
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                        ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="search" type="text"
+                            class="text-white uppercase bg-transparent outline-none text-base" />
+                        <i class="ri-search-line text-white cursor-pointer"></i>
+                    </form>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">lasted news</h2>
+                    <ul class="flex flex-col gap-y-3">
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-20-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center" />
+                            <div>
+                                <h3 class="text-xl text-white">Black Angel</h3>
+                                <p class="text-[#c2c2c2] text-sm">June 7, 2017</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-19-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center" />
+                            <div>
+                                <h3 class="text-xl text-white">Knight</h3>
+                                <p class="text-[#c2c2c2] text-sm">June 7, 2017</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">instagram</h2>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/19367313_1873362989592591_4885084815944056832_n.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/2.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/3.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/4.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/5.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/6.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">NEWSLETTER</h2>
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                        ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="subscribe" type="text"
+                            class="text-white uppercase bg-transparent outline-none text-base" />
+                        <i class="ri-mail-fill text-base text-white cursor-pointer"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="py-6 bg-[#1c1c1c]">
+        <div class="desktop:container mx-auto px-6 flex justify-between items-center">
+            <p class="text-white text-sm">© 2022 Thanh Quan, All Rights Reserved</p>
+            <ul class="flex gap-x-6 items-center">
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/scrollreveal.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

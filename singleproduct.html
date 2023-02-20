@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon" />
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>Eldritch</title>
+</head>
+
+<body class="text-sm font-Marcellus">
+    <header class="header fixed top-0 bg-transparent w-full z-[100]" id="header">
+        <nav class="nav desktop:container px-6 mx-auto flex justify-between h-20 items-center">
+            <a href="./index.html" class="nav__logo">
+                <img src="./assets/img/logo_white.png" alt="" class="w-44" />
+            </a>
+
+            <!----------------- MENU  -->
+            <div id="nav-menu"
+                class="nav__menu tablet:fixed tablet:-right-[100%] tablet:top-0 tablet:bg-white tablet:h-[100vh] tablet:w-400 tablet:pt-7 tablet:transition-[right]">
+                <ul class="nav__list flex items-center tablet:items-stretch gap-x-6 tablet:flex-col">
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="./index.html"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            home
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM DROPDOWN  -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            pages
+                            <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                        <div
+                            class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-[310px] tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                            <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./contact.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Contact Us
+                                    </a>
+                                </li>
+                                
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Comming Soon
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            forum
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM -->
+                    <li class="group/nav__item relative">
+                        <a href="#"
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            Category
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                    </li>
+
+                    <!------------- ITEM DROPDOWN  -->
+                    <li class="group/nav__item relative">
+                        <a href=""
+                            class="uppercase text-white inline-block px-1 text-sm tablet:text-second tablet:block tablet:text-center tablet:hover:bg-second tablet:hover:text-white tablet:py-5 tablet:transition-all">
+                            shop
+                            <i class="ri-arrow-down-s-line tablet:absolute tablet:right-3"></i>
+                        </a>
+                        <div
+                            class="bg-white w-0 h-px group-hover/nav__item:w-[100%] absolute -top-[-50%] transition-[width] tablet:hidden">
+                        </div>
+                        <div
+                            class="hidden group-hover/nav__item:block absolute w-200 top-10 left-0 px-6 py-8 bg-second after:absolute after:w-full after:h-10 after:-top-6 after:right-0 after:bg-transparent tablet:block tablet:relative tablet:top-0 tablet:w-[100%] tablet:h-0 tablet:overflow-hidden tablet:group-hover/nav__item:h-200 tablet:transition-[height] tablet:py-0 tablet:px-0 tablet:bg-white shadow-[0_0_15px_rgba(0,0,0,0.5)] drop-shadow-md">
+                            <ul class="z-20 relative flex flex-col gap-y-3 tablet:text-center">
+                                <li>
+                                    <a href="./shop.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Products
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Cart Page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Checkout
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="./singleproduct.html"
+                                        class="text-white tablet:py-5 tablet:text-second tablet:block tablet:hover:bg-second tablet:hover:text-white tablet:uppercase">
+                                        Single Product
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <div class="nav__close absolute right-4 top-4 cursor-pointer hidden tablet:block" id="nav-close">
+                    <i class="ri-close-line text-xl"></i>
+                </div>
+            </div>
+
+            <div class="nav__action">
+                <ul class="nav__list flex gap-x-6">
+                    <li class="group/nav__item relative">
+                        <a href="./register.html" class="py-2 px-2 rounded-1 border-[1px] border-white text-white box-shadow-login">
+                            Login
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-search-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-shopping-cart-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative">
+                        <a href="#" class="uppercase text-white inline-block px-1 text-base">
+                            <i class="ri-user-line"></i>
+                        </a>
+                    </li>
+                    <li class="group/nav__item relative" id="nav-toggle">
+                        <a href="#" class="hidden uppercase text-white px-1 text-base tablet:block">
+                            <i class="ri-menu-line"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!---------- main  -->
+    <main class="overflow-hidden bg-cover bg-center py-10"
+        style="background-image: url('./assets/img/bg/sidearea-background.jpg')">
+
+        <section class="py-20">
+            <div class="desktop:container px-6">
+                <div class="grid grid-cols-2 gap-x-10">
+                    <div>
+                        <img src="./assets/img/shop/shop-img-11-650x650.png" alt="">
+                    </div>
+                    <div class="flex flex-col gap-y-5">
+                        <h2 class="text-4xl text-white font-semibold tracking-widest">Falldown Republic</h2>
+                        <p class="text-xl font-semibold tracking-wider text-white">$95.00</p>
+
+
+                        <div class="flex items-center">
+                            <span class="h-6 w-6 border border-white text-white flex items-center justify-center">
+                                <i class="ri-subtract-line"></i>
+                            </span>
+                            <span
+                                class="h-6 w-6 border border-white text-white flex items-center justify-center">1</span>
+                            <span class="h-6 w-6 border border-white text-white flex items-center justify-center">
+                                <i class="ri-add-line"></i>
+                            </span>
+                        </div>
+                        <button class="text-sm text-white w-fit py-3 px-7 border border-white uppercase">add to
+                            cart</button>
+                        <ul class="flex flex-col gap-y-3 py-3 border-y border-first">
+                            <li class="text-white">
+                                SKU: <span class="text-first">004</span>
+                            </li>
+                            <li class="text-white">
+                                Categoriy: <span class="text-first">Games</span>
+                            </li>
+                            <li class="text-white">
+                                Tags: <span class="text-first">ps4, xbox one</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- description  -->
+        <section class="mb-10">
+            <div class="desktop:container px-6">
+
+                <h3 class="text-lg text-white pb-2 border-b-2 border-first w-fit">
+                    Description
+                </h3>
+
+            </div>
+            <div class="px-6 py-12 bg-black bg-opacity-30">
+                <p class="text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis Theme natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="desktop:container px-6">
+                <h3 class="text-xl text-white mb-7">
+                    Related products
+                </h3>
+                <div class="grid grid-cols-4 gap-5">
+                    
+                    <!-- product item  -->
+                    <div>
+                        <div class="group/product__image relative border-b-2 border-first">
+                            <div
+                                class="absolute opacity-0 group-hover/product__image:opacity-100 w-full h-full top-0 left-0 bg-black bg-opacity-80 flex items-center justify-center transition-opacity">
+                                <a href="#"
+                                    class="text-xs uppercase py-5 px-6 border border-white text-white hover:bg-white hover:text-second transition-all">
+                                    add to card
+                                </a>
+                            </div>
+                            <img src="./assets/img/shop/shop-img-2-650x650.png" alt="" />
+                        </div>
+                        <a href="#" class="p-3 block">
+                            <div class="flex items-center justify-between text-white">
+                                <h3 class="text-lg">Bravo Echo Charlie</h3>
+                                <span> $45.00 </span>
+                            </div>
+                            <ul class="flex items-center">
+                                <li class="text-first">games</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <!-- product item  -->
+                    <div>
+                        <div class="group/product__image relative border-b-2 border-first">
+                            <div
+                                class="absolute opacity-0 group-hover/product__image:opacity-100 w-full h-full top-0 left-0 bg-black bg-opacity-80 flex items-center justify-center transition-opacity">
+                                <a href="#"
+                                    class="text-xs uppercase py-5 px-6 border border-white text-white hover:bg-white hover:text-second transition-all">
+                                    add to card
+                                </a>
+                            </div>
+                            <img src="./assets/img/shop/shop-img-2-650x650.png" alt="" />
+                        </div>
+                        <a href="#" class="p-3 block">
+                            <div class="flex items-center justify-between text-white">
+                                <h3 class="text-lg">Bravo Echo Charlie</h3>
+                                <span> $45.00 </span>
+                            </div>
+                            <ul class="flex items-center">
+                                <li class="text-first">games</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <!-- product item  -->
+                    <div>
+                        <div class="group/product__image relative border-b-2 border-first">
+                            <div
+                                class="absolute opacity-0 group-hover/product__image:opacity-100 w-full h-full top-0 left-0 bg-black bg-opacity-80 flex items-center justify-center transition-opacity">
+                                <a href="#"
+                                    class="text-xs uppercase py-5 px-6 border border-white text-white hover:bg-white hover:text-second transition-all">
+                                    add to card
+                                </a>
+                            </div>
+                            <img src="./assets/img/shop/shop-img-2-650x650.png" alt="" />
+                        </div>
+                        <a href="#" class="p-3 block">
+                            <div class="flex items-center justify-between text-white">
+                                <h3 class="text-lg">Bravo Echo Charlie</h3>
+                                <span> $45.00 </span>
+                            </div>
+                            <ul class="flex items-center">
+                                <li class="text-first">games</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                    <!-- product item  -->
+                    <div>
+                        <div class="group/product__image relative border-b-2 border-first">
+                            <div
+                                class="absolute opacity-0 group-hover/product__image:opacity-100 w-full h-full top-0 left-0 bg-black bg-opacity-80 flex items-center justify-center transition-opacity">
+                                <a href="#"
+                                    class="text-xs uppercase py-5 px-6 border border-white text-white hover:bg-white hover:text-second transition-all">
+                                    add to card
+                                </a>
+                            </div>
+                            <img src="./assets/img/shop/shop-img-2-650x650.png" alt="" />
+                        </div>
+                        <a href="#" class="p-3 block">
+                            <div class="flex items-center justify-between text-white">
+                                <h3 class="text-lg">Bravo Echo Charlie</h3>
+                                <span> $45.00 </span>
+                            </div>
+                            <ul class="flex items-center">
+                                <li class="text-first">games</li>
+                            </ul>
+                        </a>
+                    </div>
+                    
+                   
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-------------- FOOTER  -->
+    <footer class="footer py-[50px] bg-second">
+        <div class="desktop:container mx-auto px-6">
+            <div
+                class="grid grid-cols-4 gap-x-10 gap-y-10 tablet:grid-cols-3 mini-tablet:grid-cols-2 mobile:grid-cols-1">
+                <div>
+                    <img src="./assets/img/logo_white.png" alt="" class="w-44 mb-4 mobile:w-52" />
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                        ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="search" type="text"
+                            class="text-white uppercase bg-transparent outline-none text-base" />
+                        <i class="ri-search-line text-white cursor-pointer"></i>
+                    </form>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">lasted news</h2>
+                    <ul class="flex flex-col gap-y-3">
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-20-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center" />
+                            <div>
+                                <h3 class="text-xl text-white">Black Angel</h3>
+                                <p class="text-[#c2c2c2] text-sm">June 7, 2017</p>
+                            </div>
+                        </li>
+                        <li class="flex items-center gap-x-4">
+                            <img src="./assets/img/portfolio/portfolio-image-19-1024x1024.jpg" alt=""
+                                class="w-20 h-20 object-cover object-center" />
+                            <div>
+                                <h3 class="text-xl text-white">Knight</h3>
+                                <p class="text-[#c2c2c2] text-sm">June 7, 2017</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">instagram</h2>
+                    <div class="grid grid-cols-3 gap-2">
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/19367313_1873362989592591_4885084815944056832_n.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/2.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/3.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/4.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/5.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                        <div class="h-20 overflow-hidden">
+                            <img src="./assets/img/instagram/6.jpg" alt=""
+                                class="w-full h-full object-cover object-center" />
+                        </div>
+                    </div>
+                </div>
+
+                <!--------------- FOOTER ITEM  -->
+                <div>
+                    <h2 class="text-white text-2xl uppercase mb-3">NEWSLETTER</h2>
+                    <p class="text-base text-white mb-6">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+                        ornare urna a pellentesque.
+                    </p>
+                    <form action=""
+                        class="w-full flex items-center py-1 px-1 border-b-[1px] border-b-white justify-between">
+                        <input placeholder="subscribe" type="text"
+                            class="text-white uppercase bg-transparent outline-none text-base" />
+                        <i class="ri-mail-fill text-base text-white cursor-pointer"></i>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="py-6 bg-[#1c1c1c]">
+        <div class="desktop:container mx-auto px-6 flex justify-between items-center">
+            <p class="text-white text-sm">© 2022 Thanh Quan, All Rights Reserved</p>
+            <ul class="flex gap-x-6 items-center">
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-twitter-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="text-xl text-white">
+                        <i class="ri-youtube-fill"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="./assets/js/scrollreveal.js"></script>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>
