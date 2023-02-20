@@ -126,8 +126,4 @@ position: absolute;
 .box-shadow-login:hover{
     box-shadow: 0 0 15px inset ;
 }
-.containerr{
-    background-color: red;
-    width: 100%;
-    height: 100%;
-}
+

@@ -1,0 +1,23 @@
+.lab4{
+    margin : 0;
+    padding : 0;
+}
+.containerr{
+    background-color: rgb(255, 255, 255);
+    width: 50%; 
+    position: relative;
+    margin: auto;
+    
+}
+.containerr h1{
+    text-align: center;
+    font-variant: small-caps;
+}
+.gg-map{
+    position: relative;
+    
+}
+.fb-page{
+    position: relative;
+    justify-content: center;
+}
