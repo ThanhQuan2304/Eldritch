@@ -16,21 +16,82 @@
              width="100%" 
              height="500px">
             </iframe>
-    <!-- Liên Hệ -->
-      <div>
-        <div class="fb-page">
-        <h1>Bài Viết</h1>
-            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02xHWeXCvzgZK4K6gcvnufZFSNhk4NrRKLAA6sbWcJzKe88CgjN6eC7hMQrhYhZM67l%26id%3D100090297107499&show_text=true&width=500" 
-             width="100%" 
-             height="416" 
-             style="border:none;overflow:hidden" 
-              scrolling="no" frameborder="0" 
-             allowfullscreen="true" 
-             allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </div>
-        <div class="fb-like" data-href="https://thanhquan2304.github.io/Eldritch/Lab4.html" data-width="" data-layout="" data-action="" data-size="" data-share="true"></div>
       </div>
+    <!-- Liên Hệ -->
+        <div class="fb-page">
+          <h1>Bài Viết</h1>
+          <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fpermalink.php%3Fstory_fbid%3Dpfbid02xHWeXCvzgZK4K6gcvnufZFSNhk4NrRKLAA6sbWcJzKe88CgjN6eC7hMQrhYhZM67l%26id%3D100090297107499&show_text=true&width=500" 
+          width="100%" 
+          height="416" 
+          style="border:none;" 
+          scrolling="no" frameborder="1" 
+          allowfullscreen="true" 
+          allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+          </iframe>
+        </div>
+    <!-- Nhúng nút like -->
+    <div id="fb-root">
+      <div class="fb-like" 
+      data-href="https://thanhquan2304.github.io/Eldritch/Lab4.html" 
+      data-width="" data-layout="" 
+      data-action="" data-size="" 
+      data-share="true">
+    </div>
+    </div>
+    <!-- Nhúng nút bình luận -->
+    <div id="fb-root">
+      <div class="fb-comments" 
+      data-href="https://thanhquan2304.github.io/Eldritch/Lab4.html" 
+      data-width="" 
+      data-numposts="5">
+    </div>
+    </div>
+    <!-- Nhúng Youtube -->
+        <div class="youtube-page">
+          <h1>Youtube</h1>
+          <iframe 
+          width="100%" 
+          height="416" 
+          src="https://www.youtube.com/embed/YymJK9ta2mA" 
+          title="YouTube video player" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+        </div>
+    <!-- Nhúng Chat Messenger -->
+    <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
     </div>
   </body>
-  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0&appId=603208371624364&autoLogAppEvents=1" nonce="C00OHWVc"></script>
-</html>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0&appId=603208371624364&autoLogAppEvents=1" nonce="dll7ywt7"></script>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0&appId=603208371624364&autoLogAppEvents=1" nonce="pw8GHjX5"></script>
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "100376639662759");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v16.0'
+      });
+    };
+
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+  </html>
