@@ -5,7 +5,7 @@ module.exports = {
   "./shop.html",
   "./contact.html",
   "./singleproduct.html",
-  "./lab4.html"
+  "./lab4.html",
 
 ],
   theme: {
